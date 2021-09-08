@@ -1,0 +1,4 @@
+[${project.name}][${env:SERVER_PORT}] 2021-08-26 04:00:03,740 DEBUG
+            [NettyServerWorker-3-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.2.114:52488, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.2.114
+[${project.name}][${env:SERVER_PORT}] 2021-08-26 04:00:29,123 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:3) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services

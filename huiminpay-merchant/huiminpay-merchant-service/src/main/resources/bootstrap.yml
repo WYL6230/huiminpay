@@ -1,0 +1,51 @@
+server:
+  port: 56040
+nacos:
+  server:
+    addr: 127.0.0.1:8848
+spring:
+  application:
+    name: huiminpay-merchant-service
+  main:
+    allow‐bean‐definition‐overriding: true # Spring Boot 2.1 需要设定
+  cloud:
+    nacos:
+      discovery:
+        server‐addr: ${nacos.server.addr}
+        namespace: 0d2dfe71-0dc0-4f1c-97d4-bb80beed3eb6
+        cluster‐name: DEFAULT
+      config:
+        server‐addr: ${nacos.server.addr} # 配置中心地址
+        file‐extension: yaml
+        namespace: 0d2dfe71-0dc0-4f1c-97d4-bb80beed3eb6 # 命令行注入
+        group: HUIMINPAY_GROUP # 聚合支付业务组
+        ext‐config:
+          - refresh: true
+            data‐id: spring-boot-http.yaml # spring boot http 配 置
+            group: COMMON_GROUP # 通用配置组
+          - refresh: true
+            # druid连接池配 置
+            data‐id: spring-boot-starter-druid.yaml
+            group: COMMON_GROUP # 通用配置组
+          - refresh: true
+            # druid连接池配 置
+            data‐id: spring-boot-mybatis-plus.yaml
+            group: COMMON_GROUP # 通用配置组
+dubbo:
+  scan:
+    # dubbo 服务扫描基准包
+    base‐packages: com.huiminpay
+  protocol:
+    name: dubbo
+    port: 20890
+  registry:
+    address: nacos://127.0.0.1:8848
+  application:
+    qos:
+      port: 22240 # dubbo qos端口配置 命令行注入
+  consumer:
+    check: false
+    timeout: 3000
+    retries: -1
+logging:
+  config: classpath:log4j2.xml

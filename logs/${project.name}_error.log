@@ -1,0 +1,289 @@
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 15:21:35,386 ERROR [main][NacosPropertySourceBuilder.java:109] - parse data from Nacos error,dataId:gateway-service.yaml,data:#路由规则
+zuul:
+	retryable: true
+	add-host-header: true
+	ignoredServices: "*"
+	sensitiveHeaders: "*"
+	routes:
+		operation-application:
+			path: /operation/**
+			stripPrefix: false
+		merchant-application:
+			path: /merchant/**
+			stripPrefix: false
+		uaa-service:
+			path: /uaa/**
+			stripPrefix: false
+feign:
+	hystrix:
+		enabled: true
+	compression:
+		request:
+			enabled:true
+			mime-types: ["text/xml","application/xml","application/json"]
+			min-request-size: 2048 #配置压缩数据大小的下限
+		response:
+			enabled: true #配置相应GZIP压缩
+hystrix:
+	command:
+		default:
+			execution:
+				isolation:
+					thread:
+						timeoutInMilliseconds: 90000 #设置熔断超时时间 默认1000
+					timeout:
+						enabled:	true #打开超时熔断功能
+ribbon:
+	nacos:
+		enabled: true #不知道是否生效
+	ConnectTimeout: 3000 #设置超时时间
+	ReadTimeout: 20000 #设置读取超时时间,
+while scanning for the next token
+found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
+ in 'reader', line 3, column 1:
+    	retryable: true
+    ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:419)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:586)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:124)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:236)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:215)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:123)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:547)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:161)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:134)
+	at org.springframework.beans.factory.config.YamlPropertiesFactoryBean.createProperties(YamlPropertiesFactoryBean.java:135)
+	at org.springframework.beans.factory.config.YamlPropertiesFactoryBean.getObject(YamlPropertiesFactoryBean.java:115)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:100)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:75)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:179)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:155)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:88)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:649)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.huiminpay.gateway.GatewayBootstrap.main(GatewayBootstrap.java:22)
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 15:24:31,354 ERROR
+            [main][SpringApplication.java:858] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'storeController': Unsatisfied dependency expressed through field 'storeService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'huiminpay.c2b.subject' in value "${huiminpay.c2b.subject}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.huiminpay.merchant.MerchantApplicationBootstrap.main(MerchantApplicationBootstrap.java:17)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'storeService': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'huiminpay.c2b.subject' in value "${huiminpay.c2b.subject}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'huiminpay.c2b.subject' in value "${huiminpay.c2b.subject}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 30 more
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 15:26:41,050 ERROR [com.alibaba.nacos.naming.client.listener][NamingProxy.java:454] - request 127.0.0.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 192.168.2.114:unknown:DEFAULT_1.0_true_false_DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:188)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:205)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:184)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.lambda$doRegister$1(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.execute(NacosRegistry.java:466)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.doRegister(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:236)
+	at org.apache.dubbo.registry.integration.RegistryProtocol.doRefer(RegistryProtocol.java:408)
+	at org.apache.dubbo.registry.integration.RegistryProtocol.refer(RegistryProtocol.java:392)
+	at org.apache.dubbo.qos.protocol.QosProtocolWrapper.refer(QosProtocolWrapper.java:70)
+	at org.apache.dubbo.rpc.protocol.ProtocolListenerWrapper.refer(ProtocolListenerWrapper.java:69)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper.refer(ProtocolFilterWrapper.java:128)
+	at org.apache.dubbo.rpc.Protocol$Adaptive.refer(Protocol$Adaptive.java)
+	at org.apache.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:401)
+	at org.apache.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:329)
+	at org.apache.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:250)
+	at com.alibaba.cloud.dubbo.service.DubboGenericServiceFactory.create(DubboGenericServiceFactory.java:80)
+	at com.alibaba.cloud.dubbo.service.DubboMetadataServiceInvocationHandler.<init>(DubboMetadataServiceInvocationHandler.java:41)
+	at com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy.newProxy(DubboMetadataServiceProxy.java:83)
+	at com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy.lambda$initProxy$0(DubboMetadataServiceProxy.java:52)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy.initProxy(DubboMetadataServiceProxy.java:51)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.initDubboMetadataServiceProxy(DubboServiceMetadataRepository.java:640)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.lambda$null$4(DubboServiceMetadataRepository.java:619)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.lambda$initSubscribedDubboMetadataService$5(DubboServiceMetadataRepository.java:615)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.initSubscribedDubboMetadataService(DubboServiceMetadataRepository.java:614)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.initializeMetadata(DubboServiceMetadataRepository.java:286)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository$$FastClassBySpringCGLIB$$4ef4b7bd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository$$EnhancerBySpringCGLIB$$3c7262c0.initializeMetadata(<generated>)
+	at com.alibaba.cloud.dubbo.registry.AbstractSpringCloudRegistry.subscribeDubboServiceURL(AbstractSpringCloudRegistry.java:228)
+	at com.alibaba.cloud.dubbo.registry.AbstractSpringCloudRegistry$1.onApplicationEvent(AbstractSpringCloudRegistry.java:193)
+	at com.alibaba.cloud.dubbo.registry.AbstractSpringCloudRegistry$1.onApplicationEvent(AbstractSpringCloudRegistry.java:186)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.alibaba.cloud.dubbo.autoconfigure.DubboServiceDiscoveryAutoConfiguration.dispatchServiceInstancesChangedEvent(DubboServiceDiscoveryAutoConfiguration.java:161)
+	at com.alibaba.cloud.dubbo.autoconfigure.DubboServiceDiscoveryAutoConfiguration.access$200(DubboServiceDiscoveryAutoConfiguration.java:107)
+	at com.alibaba.cloud.dubbo.autoconfigure.DubboServiceDiscoveryAutoConfiguration$NacosConfiguration.lambda$subscribeEventListener$1(DubboServiceDiscoveryAutoConfiguration.java:541)
+	at com.alibaba.nacos.client.naming.core.EventDispatcher$Notifier.run(EventDispatcher.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 15:26:41,062 ERROR [com.alibaba.nacos.naming.client.listener][FailbackRegistry.java:251] -  [DUBBO] Failed to register consumer://192.168.2.114/org.apache.dubbo.rpc.service.GenericService?application=user-service&category=consumers&check=false&dubbo=2.0.2&generic=true&group=huiminpay-merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=18540&qos.enable=false&qos.port=22230&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1630394800880&version=1.0.0, waiting for retry, cause: failed to req API:/nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 192.168.2.114:unknown:DEFAULT_1.0_true_false_DEFAULT, dubbo version: 2.7.3, current host: 192.168.2.114
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 192.168.2.114:unknown:DEFAULT_1.0_true_false_DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:188)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:205)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:184)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.lambda$doRegister$1(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.execute(NacosRegistry.java:466)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.doRegister(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:236)
+	at org.apache.dubbo.registry.integration.RegistryProtocol.doRefer(RegistryProtocol.java:408)
+	at org.apache.dubbo.registry.integration.RegistryProtocol.refer(RegistryProtocol.java:392)
+	at org.apache.dubbo.qos.protocol.QosProtocolWrapper.refer(QosProtocolWrapper.java:70)
+	at org.apache.dubbo.rpc.protocol.ProtocolListenerWrapper.refer(ProtocolListenerWrapper.java:69)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper.refer(ProtocolFilterWrapper.java:128)
+	at org.apache.dubbo.rpc.Protocol$Adaptive.refer(Protocol$Adaptive.java)
+	at org.apache.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:401)
+	at org.apache.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:329)
+	at org.apache.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:250)
+	at com.alibaba.cloud.dubbo.service.DubboGenericServiceFactory.create(DubboGenericServiceFactory.java:80)
+	at com.alibaba.cloud.dubbo.service.DubboMetadataServiceInvocationHandler.<init>(DubboMetadataServiceInvocationHandler.java:41)
+	at com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy.newProxy(DubboMetadataServiceProxy.java:83)
+	at com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy.lambda$initProxy$0(DubboMetadataServiceProxy.java:52)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy.initProxy(DubboMetadataServiceProxy.java:51)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.initDubboMetadataServiceProxy(DubboServiceMetadataRepository.java:640)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.lambda$null$4(DubboServiceMetadataRepository.java:619)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.lambda$initSubscribedDubboMetadataService$5(DubboServiceMetadataRepository.java:615)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.initSubscribedDubboMetadataService(DubboServiceMetadataRepository.java:614)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository.initializeMetadata(DubboServiceMetadataRepository.java:286)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository$$FastClassBySpringCGLIB$$4ef4b7bd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository$$EnhancerBySpringCGLIB$$3c7262c0.initializeMetadata(<generated>)
+	at com.alibaba.cloud.dubbo.registry.AbstractSpringCloudRegistry.subscribeDubboServiceURL(AbstractSpringCloudRegistry.java:228)
+	at com.alibaba.cloud.dubbo.registry.AbstractSpringCloudRegistry$1.onApplicationEvent(AbstractSpringCloudRegistry.java:193)
+	at com.alibaba.cloud.dubbo.registry.AbstractSpringCloudRegistry$1.onApplicationEvent(AbstractSpringCloudRegistry.java:186)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.alibaba.cloud.dubbo.autoconfigure.DubboServiceDiscoveryAutoConfiguration.dispatchServiceInstancesChangedEvent(DubboServiceDiscoveryAutoConfiguration.java:161)
+	at com.alibaba.cloud.dubbo.autoconfigure.DubboServiceDiscoveryAutoConfiguration.access$200(DubboServiceDiscoveryAutoConfiguration.java:107)
+	at com.alibaba.cloud.dubbo.autoconfigure.DubboServiceDiscoveryAutoConfiguration$NacosConfiguration.lambda$subscribeEventListener$1(DubboServiceDiscoveryAutoConfiguration.java:541)
+	at com.alibaba.nacos.client.naming.core.EventDispatcher$Notifier.run(EventDispatcher.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 15:26:51,074 ERROR [DubboRegistryRetryTimer-thread-1][NamingProxy.java:454] - request 127.0.0.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 192.168.2.114:unknown:DEFAULT_1.0_true_false_DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:188)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:205)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:184)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.lambda$doRegister$1(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.execute(NacosRegistry.java:466)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.doRegister(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.retry.FailedRegisteredTask.doRetry(FailedRegisteredTask.java:37)
+	at org.apache.dubbo.registry.retry.AbstractRetryTask.run(AbstractRetryTask.java:124)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:648)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:727)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$Worker.run(HashedWheelTimer.java:449)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 15:27:01,071 ERROR [DubboRegistryRetryTimer-thread-1][NamingProxy.java:454] - request 127.0.0.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 192.168.2.114:unknown:DEFAULT_1.0_true_false_DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:188)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:205)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:184)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.lambda$doRegister$1(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.execute(NacosRegistry.java:466)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.doRegister(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.retry.FailedRegisteredTask.doRetry(FailedRegisteredTask.java:37)
+	at org.apache.dubbo.registry.retry.AbstractRetryTask.run(AbstractRetryTask.java:124)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:648)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:727)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$Worker.run(HashedWheelTimer.java:449)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 15:27:11,071 ERROR [DubboRegistryRetryTimer-thread-1][NamingProxy.java:454] - request 127.0.0.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 192.168.2.114:unknown:DEFAULT_1.0_true_false_DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:188)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:205)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:184)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.lambda$doRegister$1(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.execute(NacosRegistry.java:466)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.doRegister(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.retry.FailedRegisteredTask.doRetry(FailedRegisteredTask.java:37)
+	at org.apache.dubbo.registry.retry.AbstractRetryTask.run(AbstractRetryTask.java:124)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:648)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:727)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$Worker.run(HashedWheelTimer.java:449)
+	at java.lang.Thread.run(Thread.java:748)

@@ -1,0 +1,26 @@
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:31,699 INFO [main][StartupInfoLogger.java:50] - Starting SailingBootstrap on OYGNBEPODPJEHE5 with PID 5616 (F:\sailing\target\classes started by Administrator in F:\sailing)
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:31,706 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:32,690 INFO [main][RepositoryConfigurationDelegate.java:244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:32,694 INFO [main][RepositoryConfigurationDelegate.java:126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:32,791 INFO [main][RepositoryConfigurationDelegate.java:182] - Finished Spring Data repository scanning in 85ms. Found 0 repository interfaces.
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:33,331 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 56085 (http)
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:33,345 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-56085"]
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:33,353 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:33,354 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:33,360 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\Java\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\apache-tomcat-8.5.50\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.6\bin;F:\Java\jdk\bin;D:\tools\apache-maven-3.5.0\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Users\Administrator\AppData\Local\Pandoc\;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\bin;;.]
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:33,641 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:33,642 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 1906 ms
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:34,414 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:34,484 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:34,601 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:34,872 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:34,892 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:34,923 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:34,945 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-56085"]
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:34,970 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 56085 (http) with context path '/sailing'
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:34,973 INFO [main][StartupInfoLogger.java:59] - Started SailingBootstrap in 3.635 seconds (JVM running for 5.209)
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:35,387 INFO [RMI TCP Connection(4)-127.0.0.1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:35,388 INFO [RMI TCP Connection(4)-127.0.0.1][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:35,395 INFO [RMI TCP Connection(4)-127.0.0.1][FrameworkServlet.java:546] - Completed initialization in 7 ms
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:35,484 INFO [RMI TCP Connection(2)-127.0.0.1][EpollProvider.java:68] - Starting without optional epoll library
+[${project.name}][${env:SERVER_PORT}] 2020-09-21 17:33:35,487 INFO [RMI TCP Connection(2)-127.0.0.1][KqueueProvider.java:70] - Starting without optional kqueue library

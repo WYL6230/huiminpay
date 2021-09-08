@@ -1,0 +1,969 @@
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:15,342 INFO
+            [main][:] - using logger: org.apache.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:15,366 INFO
+            [main][WelcomeLogoApplicationListener.java:63] - 
+
+ :: Dubbo Spring Boot (v2.7.1) : https://github.com/apache/incubator-dubbo-spring-boot-project
+ :: Dubbo (v2.7.3) : https://github.com/apache/incubator-dubbo
+ :: Discuss group : dev@dubbo.apache.org
+
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:15,374 INFO
+            [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=huiminpay-merchant-application, dubbo.application.qos-enable=false, dubbo.application.qos.port=22310, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=3000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20891, dubbo.registry.address=nacos://127.0.0.1:8848, dubbo.scan.base‐packages=com.huiminpay}
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:16,067 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$325e372] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:16,201 INFO
+            [pool-3-thread-1][AwaitingNonWebApplicationListener.java:140] -  [Dubbo] Current Spring Boot Application is await...
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:16,489 INFO
+            [main][OverrideDubboConfigApplicationListener.java:68] - Dubbo Config was overridden by externalized configuration {dubbo.application.name=huiminpay-merchant-application, dubbo.application.qos-enable=false, dubbo.application.qos.port=22310, dubbo.config.multiple=true, dubbo.consumer.check=false, dubbo.consumer.retries=-1, dubbo.consumer.timeout=3000, dubbo.protocol.name=dubbo, dubbo.protocol.port=20891, dubbo.registry.address=nacos://127.0.0.1:8848, dubbo.scan.base‐packages=com.huiminpay}
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:16,764 INFO
+            [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'spring-boot-http.yaml', group: 'COMMON_GROUP'
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:16,778 INFO
+            [main][NacosPropertySourceBuilder.java:87] - Loading nacos data, dataId: 'huiminpay-merchant-application.yaml', group: 'HUIMINPAY_GROUP'
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:16,780 INFO
+            [main][PropertySourceBootstrapConfiguration.java:98] - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource@1366741625 {name='huiminpay-merchant-application.yaml', properties={server.servlet.context‐path=/merchant, swagger.enable=true}}, NacosPropertySource@926905424 {name='spring-boot-http.yaml', properties={management.endpoints.web.exposure.include=refresh,health,info,env, spring.http.encoding.charset=UTF-8, spring.http.encoding.enabled=true, server.servlet.context‐path=/, spring.messages.encoding=UTF-8, spring.http.encoding.force=true, server.tomcat.protocol_header=x‐forwarded‐proto, server.tomcat.remote_ip_header=x‐forwarded‐for, server.use‐forward‐headers=true}}]}
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:16,822 INFO
+            [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,646 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,650 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,674 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ApplicationConfig] within prefix [dubbo.applications]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,674 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ModuleConfig] within prefix [dubbo.modules]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,675 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.RegistryConfig] within prefix [dubbo.registries]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,675 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ProtocolConfig] within prefix [dubbo.protocols]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,675 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MonitorConfig] within prefix [dubbo.monitors]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,676 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ProviderConfig] within prefix [dubbo.providers]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,676 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ConsumerConfig] within prefix [dubbo.consumers]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,676 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.spring.ConfigCenterBean] within prefix [dubbo.config-centers]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,677 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MetadataReportConfig] within prefix [dubbo.metadata-reports]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,679 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ApplicationConfig#0, class : org.apache.dubbo.config.ApplicationConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,680 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ApplicationConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,681 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ModuleConfig] within prefix [dubbo.module]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,681 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.RegistryConfig#0, class : org.apache.dubbo.config.RegistryConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,681 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.RegistryConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,682 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ProtocolConfig#0, class : org.apache.dubbo.config.ProtocolConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,682 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ProtocolConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,682 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MonitorConfig] within prefix [dubbo.monitor]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,682 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.ProviderConfig] within prefix [dubbo.provider]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,683 INFO
+            [main][DubboConfigBindingRegistrar.java:127] - The dubbo config bean definition [name : org.apache.dubbo.config.ConsumerConfig#0, class : org.apache.dubbo.config.ConsumerConfig] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,684 INFO
+            [main][DubboConfigBindingRegistrar.java:151] - The BeanPostProcessor bean definition [org.apache.dubbo.config.spring.beans.factory.annotation.DubboConfigBindingBeanPostProcessor] for dubbo config bean [name : org.apache.dubbo.config.ConsumerConfig#0] has been registered.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,684 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.spring.ConfigCenterBean] within prefix [dubbo.config-center]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:18,685 DEBUG
+            [main][DubboConfigBindingRegistrar.java:96] - There is no property for binding to dubbo config class [org.apache.dubbo.config.MetadataReportConfig] within prefix [dubbo.metadata-report]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:19,071 WARN
+            [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:19,212 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:204] -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:19,213 INFO
+            [main][ServiceAnnotationBeanPostProcessor.java:206] -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:19,263 WARN
+            [main][ServiceAnnotationBeanPostProcessor.java:169] -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[com.huiminpay], dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:19,267 INFO
+            [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboRelaxedBinding2AutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:19,267 INFO
+            [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'org.apache.dubbo.spring.boot.autoconfigure.DubboAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:19,489 INFO
+            [main][GenericScope.java:294] - BeanFactory id=0c4a0899-540a-3c8b-8201-7b09b0ed6d92
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,059 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboOpenFeignAutoConfiguration$$EnhancerBySpringCGLIB$$6acd2f79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,100 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubbo.cloud-com.alibaba.cloud.dubbo.env.DubboCloudProperties' of type [com.alibaba.cloud.dubbo.env.DubboCloudProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,139 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'metadataJsonResolver' of type [com.alibaba.cloud.dubbo.metadata.resolver.DubboServiceBeanMetadataResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,169 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.dubbo.config.ApplicationConfig#0' of type [org.apache.dubbo.config.ApplicationConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,180 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboProtocolConfigSupplier' of type [com.alibaba.cloud.dubbo.metadata.DubboProtocolConfigSupplier] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,182 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceExporter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,183 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboMetadataAutoConfiguration$$EnhancerBySpringCGLIB$$dd0ccbf3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,195 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration' of type [com.alibaba.cloud.dubbo.autoconfigure.DubboServiceAutoConfiguration$$EnhancerBySpringCGLIB$$6fb6d44b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,208 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboGenericServiceFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,218 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'dubboMetadataConfigServiceProxy' of type [com.alibaba.cloud.dubbo.service.DubboMetadataServiceProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,231 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$2ffc0e05] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,245 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$23c716ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,273 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.commons.util.UtilAutoConfiguration' of type [org.springframework.cloud.commons.util.UtilAutoConfiguration$$EnhancerBySpringCGLIB$$aeb9a9f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,289 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtilsProperties' of type [org.springframework.cloud.commons.util.InetUtilsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,294 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'inetUtils' of type [org.springframework.cloud.commons.util.InetUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,540 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosProperties' of type [com.alibaba.cloud.nacos.NacosDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,557 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'nacosDiscoveryClient' of type [com.alibaba.cloud.nacos.discovery.NacosDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,611 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties' of type [org.springframework.boot.autoconfigure.web.ServerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,616 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration$$EnhancerBySpringCGLIB$$fc2aa6d3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,863 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryProperties' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,871 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'simpleDiscoveryClient' of type [org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,880 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'compositeDiscoveryClient' of type [org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:20,889 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.util.JSONUtils' of type [com.alibaba.cloud.dubbo.util.JSONUtils] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,073 WARN
+            [main][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,074 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository' of type [com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,105 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestParamServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,141 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties' of type [org.springframework.boot.autoconfigure.http.HttpProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,153 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$344d72a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,177 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'stringHttpMessageConverter' of type [org.springframework.http.converter.StringHttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,191 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration' of type [org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration$$EnhancerBySpringCGLIB$$6e236ea9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,204 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$429f6006] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,219 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$f4ec221f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,233 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$b003080e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,244 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,254 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,271 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$d6ce7f3c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,308 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,325 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$24aafd95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,354 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,365 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,436 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,462 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'mappingJackson2HttpMessageConverter' of type [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,476 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration' of type [org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$$EnhancerBySpringCGLIB$$13fac09] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,496 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'messageConverters' of type [org.springframework.boot.autoconfigure.http.HttpMessageConverters] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,503 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestBodyServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,519 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.RequestHeaderServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,536 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver' of type [com.alibaba.cloud.dubbo.service.parameter.PathVariableServiceParameterResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,537 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory' of type [com.alibaba.cloud.dubbo.service.DubboGenericServiceExecutionContextFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,581 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,594 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,597 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,600 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'relaxedDubboConfigBinder' of type [org.apache.dubbo.spring.boot.autoconfigure.BinderDubboConfigBinder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:21,624 INFO
+            [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$325e372] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:22,493 INFO
+            [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 57010 (http)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:22,526 INFO
+            [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-57010"]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:22,543 INFO
+            [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:22,545 INFO
+            [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:22,561 INFO
+            [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\bin\;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;"C:\Program Files\Java\jdk1.8.0_211\bin;";"C:\Program Files\Java\jdk1.8.0_211\jre\bin;";C:\Program Files\MySQL\MySQL Server 8.0\bin;"F:\tools\apache-tomcat-8.5.24\bin;";E:\apache-maven-3.3.3\bin;C:\Program Files\TortoiseGit\bin;"D:\erl-23.3\bin;";D:\nodejs\;D:\nodejs\npm_modules;F:\tools\ffmpeg-20180227-fa0c9d6-win64-static\bin;D:\Git\cmd;C:\Users\Wenbo\AppData\Local\Microsoft\WindowsApps;C:\Users\Wenbo\AppData\Roaming\npm;C:\Users\Wenbo\AppData\Local\Programs\Microsoft VS Code\bin;.]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:22,931 INFO
+            [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:22,931 INFO
+            [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 6090 ms
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:25,979 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Protocol$Adaptive implements org.apache.dubbo.rpc.Protocol {
+public void destroy()  {
+throw new UnsupportedOperationException("The method public abstract void org.apache.dubbo.rpc.Protocol.destroy() of interface org.apache.dubbo.rpc.Protocol is not adaptive method!");
+}
+public int getDefaultPort()  {
+throw new UnsupportedOperationException("The method public abstract int org.apache.dubbo.rpc.Protocol.getDefaultPort() of interface org.apache.dubbo.rpc.Protocol is not adaptive method!");
+}
+public org.apache.dubbo.rpc.Exporter export(org.apache.dubbo.rpc.Invoker arg0) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.Protocol) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.rpc.Protocol extension = (org.apache.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.export(arg0);
+}
+public org.apache.dubbo.rpc.Invoker refer(java.lang.Class arg0, org.apache.dubbo.common.URL arg1) throws org.apache.dubbo.rpc.RpcException {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg1;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.Protocol) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.rpc.Protocol extension = (org.apache.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.refer(arg0, arg1);
+}
+}, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,180 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc.cluster;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Cluster$Adaptive implements org.apache.dubbo.rpc.cluster.Cluster {
+public org.apache.dubbo.rpc.Invoker join(org.apache.dubbo.rpc.cluster.Directory arg0) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.cluster.Directory argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.cluster.Directory argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("cluster", "failover");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.cluster.Cluster) name from url (" + url.toString() + ") use keys([cluster])");
+org.apache.dubbo.rpc.cluster.Cluster extension = (org.apache.dubbo.rpc.cluster.Cluster)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.cluster.Cluster.class).getExtension(extName);
+return extension.join(arg0);
+}
+}, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,244 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class ProxyFactory$Adaptive implements org.apache.dubbo.rpc.ProxyFactory {
+public java.lang.Object getProxy(org.apache.dubbo.rpc.Invoker arg0) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.ProxyFactory) name from url (" + url.toString() + ") use keys([proxy])");
+org.apache.dubbo.rpc.ProxyFactory extension = (org.apache.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0);
+}
+public java.lang.Object getProxy(org.apache.dubbo.rpc.Invoker arg0, boolean arg1) throws org.apache.dubbo.rpc.RpcException {
+if (arg0 == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("org.apache.dubbo.rpc.Invoker argument getUrl() == null");
+org.apache.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.ProxyFactory) name from url (" + url.toString() + ") use keys([proxy])");
+org.apache.dubbo.rpc.ProxyFactory extension = (org.apache.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0, arg1);
+}
+public org.apache.dubbo.rpc.Invoker getInvoker(java.lang.Object arg0, java.lang.Class arg1, org.apache.dubbo.common.URL arg2) throws org.apache.dubbo.rpc.RpcException {
+if (arg2 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg2;
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.ProxyFactory) name from url (" + url.toString() + ") use keys([proxy])");
+org.apache.dubbo.rpc.ProxyFactory extension = (org.apache.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getInvoker(arg0, arg1, arg2);
+}
+}, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,350 INFO
+            [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ConsumerConfig#0] have been binding by prefix of configuration properties : dubbo.consumer
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,387 INFO
+            [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.RegistryConfig#0] have been binding by prefix of configuration properties : dubbo.registry
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,397 INFO
+            [main][AnnotatedInterfaceConfigBeanBuilder.java:84] - The configBean[type:ReferenceBean] has been built.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,437 WARN
+            [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,493 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,495 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,526 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.registry;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class RegistryFactory$Adaptive implements org.apache.dubbo.registry.RegistryFactory {
+public org.apache.dubbo.registry.Registry getRegistry(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.registry.RegistryFactory) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.registry.RegistryFactory extension = (org.apache.dubbo.registry.RegistryFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.registry.RegistryFactory.class).getExtension(extName);
+return extension.getRegistry(arg0);
+}
+}, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,539 INFO
+            [main][QosProtocolWrapper.java:89] -  [DUBBO] qos won't be started because it is disabled. Please check dubbo.application.qos.enable is configured either in system property, dubbo.properties or XML/spring-boot configuration., dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,539 WARN
+            [main][SpringExtensionFactory.java:86] -  [DUBBO] No spring extension (bean) named:applicationContext, try to find an extension (bean) of type org.springframework.context.ConfigurableApplicationContext, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,541 DEBUG
+            [main][SpringExtensionFactory.java:99] -  [DUBBO] Error when get spring extension(bean) for type:org.springframework.context.ConfigurableApplicationContext, dubbo version: 2.7.3, current host: 172.16.26.143
+org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.context.ConfigurableApplicationContext' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:343)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1123)
+	at org.apache.dubbo.config.spring.extension.SpringExtensionFactory.getExtension(SpringExtensionFactory.java:94)
+	at org.apache.dubbo.common.extension.factory.AdaptiveExtensionFactory.getExtension(AdaptiveExtensionFactory.java:47)
+	at org.apache.dubbo.common.extension.ExtensionLoader.injectExtension(ExtensionLoader.java:566)
+	at org.apache.dubbo.common.extension.ExtensionLoader.createExtension(ExtensionLoader.java:535)
+	at org.apache.dubbo.common.extension.ExtensionLoader.getExtension(ExtensionLoader.java:351)
+	at org.apache.dubbo.registry.RegistryFactory$Adaptive.getRegistry(RegistryFactory$Adaptive.java)
+	at org.apache.dubbo.registry.integration.RegistryProtocol.refer(RegistryProtocol.java:379)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper.refer(ProtocolFilterWrapper.java:128)
+	at org.apache.dubbo.qos.protocol.QosProtocolWrapper.refer(QosProtocolWrapper.java:70)
+	at org.apache.dubbo.rpc.protocol.ProtocolListenerWrapper.refer(ProtocolListenerWrapper.java:69)
+	at org.apache.dubbo.rpc.Protocol$Adaptive.refer(Protocol$Adaptive.java)
+	at org.apache.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:401)
+	at org.apache.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:329)
+	at org.apache.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:250)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.init(ReferenceAnnotationBeanPostProcessor.java:269)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.access$100(ReferenceAnnotationBeanPostProcessor.java:242)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.buildInvocationHandler(ReferenceAnnotationBeanPostProcessor.java:236)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.buildProxy(ReferenceAnnotationBeanPostProcessor.java:219)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.doGetInjectedBean(ReferenceAnnotationBeanPostProcessor.java:134)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.getInjectedObject(AnnotationInjectedBeanPostProcessor.java:360)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor$AnnotatedFieldElement.inject(AnnotationInjectedBeanPostProcessor.java:540)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.postProcessPropertyValues(AnnotationInjectedBeanPostProcessor.java:147)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.huiminpay.merchant.MerchantApplicationBootstrap.main(MerchantApplicationBootstrap.java:17)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,550 WARN
+            [main][SpringExtensionFactory.java:104] -  [DUBBO] No spring extension (bean) named:applicationContext, type:org.springframework.context.ConfigurableApplicationContext found, stop get bean., dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,597 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.rpc.cluster;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class RouterFactory$Adaptive implements org.apache.dubbo.rpc.cluster.RouterFactory {
+public org.apache.dubbo.rpc.cluster.Router getRouter(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.rpc.cluster.RouterFactory) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.rpc.cluster.RouterFactory extension = (org.apache.dubbo.rpc.cluster.RouterFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.rpc.cluster.RouterFactory.class).getExtension(extName);
+return extension.getRouter(arg0);
+}
+}, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,610 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,611 DEBUG
+            [main][AbstractSpringCloudRegistry.java:116] - The URL[consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438] should not be registered.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,623 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,626 INFO
+            [main][AbstractSpringCloudRegistry.java:213] - The Dubbo Service URL[ID : consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi] is being subscribed for service[name : huiminpay-merchant-service]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,626 INFO
+            [main][AbstractSpringCloudRegistry.java:223] - The metadata of Dubbo service[key : com.huiminpay.merchant.api.MerchantServiceApi] can't be found when the subscribed service[name : huiminpay-merchant-service], and then try to initialize it
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,626 INFO
+            [main][DubboServiceMetadataRepository.java:280] - The metadata of Dubbo service[name : huiminpay-merchant-service] is about to be initialized
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,769 WARN
+            [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,775 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,776 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,780 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://172.16.26.143/org.apache.dubbo.rpc.service.GenericService?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&generic=true&group=huiminpay-merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386770&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,781 DEBUG
+            [main][AbstractSpringCloudRegistry.java:116] - The URL[consumer://172.16.26.143/org.apache.dubbo.rpc.service.GenericService?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&generic=true&group=huiminpay-merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386770&version=1.0.0] should not be registered.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,781 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://172.16.26.143/org.apache.dubbo.rpc.service.GenericService?application=huiminpay-merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=huiminpay-merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386770&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,831 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.remoting;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Transporter$Adaptive implements org.apache.dubbo.remoting.Transporter {
+public org.apache.dubbo.remoting.Client connect(org.apache.dubbo.common.URL arg0, org.apache.dubbo.remoting.ChannelHandler arg1) throws org.apache.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.remoting.Transporter) name from url (" + url.toString() + ") use keys([client, transporter])");
+org.apache.dubbo.remoting.Transporter extension = (org.apache.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(org.apache.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.connect(arg0, arg1);
+}
+public org.apache.dubbo.remoting.Server bind(org.apache.dubbo.common.URL arg0, org.apache.dubbo.remoting.ChannelHandler arg1) throws org.apache.dubbo.remoting.RemotingException {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getParameter("server", url.getParameter("transporter", "netty"));
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.remoting.Transporter) name from url (" + url.toString() + ") use keys([server, transporter])");
+org.apache.dubbo.remoting.Transporter extension = (org.apache.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(org.apache.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.bind(arg0, arg1);
+}
+}, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,867 DEBUG
+            [main][InternalLoggerFactory.java:43] - Using SLF4J as the default logging framework
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,875 DEBUG
+            [main][MultithreadEventLoopGroup.java:44] - -Dio.netty.eventLoopThreads: 32
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,926 DEBUG
+            [main][NioEventLoop.java:105] - -Dio.netty.noKeySetOptimization: false
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,926 DEBUG
+            [main][NioEventLoop.java:106] - -Dio.netty.selectorAutoRebuildThreshold: 512
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,932 DEBUG
+            [main][PlatformDependent.java:955] - Platform: Windows
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,937 DEBUG
+            [main][PlatformDependent0.java:395] - -Dio.netty.noUnsafe: false
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,938 DEBUG
+            [main][PlatformDependent0.java:871] - Java version: 8
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,940 DEBUG
+            [main][PlatformDependent0.java:120] - sun.misc.Unsafe.theUnsafe: available
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,942 DEBUG
+            [main][PlatformDependent0.java:144] - sun.misc.Unsafe.copyMemory: available
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,944 DEBUG
+            [main][PlatformDependent0.java:182] - java.nio.Buffer.address: available
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,946 DEBUG
+            [main][PlatformDependent0.java:243] - direct buffer constructor: available
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,948 DEBUG
+            [main][PlatformDependent0.java:313] - java.nio.Bits.unaligned: available, true
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,948 DEBUG
+            [main][PlatformDependent0.java:378] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,948 DEBUG
+            [main][PlatformDependent0.java:385] - java.nio.DirectByteBuffer.<init>(long, int): available
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,949 DEBUG
+            [main][PlatformDependent.java:992] - sun.misc.Unsafe: available
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,950 DEBUG
+            [main][PlatformDependent.java:1086] - -Dio.netty.tmpdir: C:\Users\Wenbo\AppData\Local\Temp (java.io.tmpdir)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,950 DEBUG
+            [main][PlatformDependent.java:1165] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,954 DEBUG
+            [main][PlatformDependent.java:157] - -Dio.netty.maxDirectMemory: 7621050368 bytes
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,954 DEBUG
+            [main][PlatformDependent.java:164] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,957 DEBUG
+            [main][CleanerJava6.java:92] - java.nio.ByteBuffer.cleaner(): available
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,958 DEBUG
+            [main][PlatformDependent.java:184] - -Dio.netty.noPreferDirect: false
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:26,961 DEBUG
+            [main][PlatformDependent.java:860] - org.jctools-core.MpscChunkedArrayQueue: available
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,026 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.remoting;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Dispatcher$Adaptive implements org.apache.dubbo.remoting.Dispatcher {
+public org.apache.dubbo.remoting.ChannelHandler dispatch(org.apache.dubbo.remoting.ChannelHandler arg0, org.apache.dubbo.common.URL arg1)  {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg1;
+String extName = url.getParameter("dispatcher", url.getParameter("dispather", url.getParameter("channel.handler", "all")));
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.remoting.Dispatcher) name from url (" + url.toString() + ") use keys([dispatcher, dispather, channel.handler])");
+org.apache.dubbo.remoting.Dispatcher extension = (org.apache.dubbo.remoting.Dispatcher)ExtensionLoader.getExtensionLoader(org.apache.dubbo.remoting.Dispatcher.class).getExtension(extName);
+return extension.dispatch(arg0, arg1);
+}
+}, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,049 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.common.threadpool;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class ThreadPool$Adaptive implements org.apache.dubbo.common.threadpool.ThreadPool {
+public java.util.concurrent.Executor getExecutor(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getParameter("threadpool", "fixed");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.common.threadpool.ThreadPool) name from url (" + url.toString() + ") use keys([threadpool])");
+org.apache.dubbo.common.threadpool.ThreadPool extension = (org.apache.dubbo.common.threadpool.ThreadPool)ExtensionLoader.getExtensionLoader(org.apache.dubbo.common.threadpool.ThreadPool.class).getExtension(extName);
+return extension.getExecutor(arg0);
+}
+}, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,111 DEBUG
+            [main][ResourceLeakDetector.java:129] - -Dio.netty.leakDetection.level: simple
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,112 DEBUG
+            [main][ResourceLeakDetector.java:130] - -Dio.netty.leakDetection.targetRecords: 4
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,124 DEBUG
+            [main][PooledByteBufAllocator.java:126] - -Dio.netty.allocator.numHeapArenas: 32
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,125 DEBUG
+            [main][PooledByteBufAllocator.java:127] - -Dio.netty.allocator.numDirectArenas: 32
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,125 DEBUG
+            [main][PooledByteBufAllocator.java:129] - -Dio.netty.allocator.pageSize: 8192
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,125 DEBUG
+            [main][PooledByteBufAllocator.java:134] - -Dio.netty.allocator.maxOrder: 11
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,126 DEBUG
+            [main][PooledByteBufAllocator.java:138] - -Dio.netty.allocator.chunkSize: 16777216
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,126 DEBUG
+            [main][PooledByteBufAllocator.java:139] - -Dio.netty.allocator.tinyCacheSize: 512
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,127 DEBUG
+            [main][PooledByteBufAllocator.java:140] - -Dio.netty.allocator.smallCacheSize: 256
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,127 DEBUG
+            [main][PooledByteBufAllocator.java:141] - -Dio.netty.allocator.normalCacheSize: 64
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,127 DEBUG
+            [main][PooledByteBufAllocator.java:142] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,128 DEBUG
+            [main][PooledByteBufAllocator.java:143] - -Dio.netty.allocator.cacheTrimInterval: 8192
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,128 DEBUG
+            [main][PooledByteBufAllocator.java:144] - -Dio.netty.allocator.useCacheForAllThreads: true
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,128 DEBUG
+            [main][PooledByteBufAllocator.java:145] - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,139 DEBUG
+            [main][InternalThreadLocalMap.java:54] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,140 DEBUG
+            [main][InternalThreadLocalMap.java:57] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,180 DEBUG
+            [main][DefaultChannelId.java:79] - -Dio.netty.processId: 15168 (auto-detected)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,185 DEBUG
+            [main][NetUtil.java:139] - -Djava.net.preferIPv4Stack: false
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,186 DEBUG
+            [main][NetUtil.java:140] - -Djava.net.preferIPv6Addresses: false
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,311 DEBUG
+            [main][NetUtil.java:224] - Loopback interface: [lo, Software Loopback Interface 1, 127.0.0.1] ([lo, Software Loopback Interface 1, 127.0.0.1], {})
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,313 DEBUG
+            [main][NetUtil.java:289] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,445 DEBUG
+            [main][DefaultChannelId.java:101] - -Dio.netty.machineId: 10:60:4b:ff:fe:5c:4c:06 (auto-detected)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,494 DEBUG
+            [main][ByteBufUtil.java:83] - -Dio.netty.allocator.type: pooled
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,495 DEBUG
+            [main][ByteBufUtil.java:92] - -Dio.netty.threadLocalDirectBufferSize: 0
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,495 DEBUG
+            [main][ByteBufUtil.java:95] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,549 INFO
+            [main][AbstractClient.java:199] -  [DUBBO] Succeed connect to server /172.16.26.143:20890 from NettyClient 172.16.26.143 using dubbo version 2.7.3, channel is NettyChannel [channel=[id: 0xe85463e0, L:/172.16.26.143:51629 - R:/172.16.26.143:20890]], dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,550 INFO
+            [main][AbstractClient.java:71] -  [DUBBO] Start NettyClient DESKTOP-0F52ALP/172.16.26.143 connect to the server /172.16.26.143:20890, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,608 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.cache;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class CacheFactory$Adaptive implements org.apache.dubbo.cache.CacheFactory {
+public org.apache.dubbo.cache.Cache getCache(org.apache.dubbo.common.URL arg0, org.apache.dubbo.rpc.Invocation arg1)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+if (arg1 == null) throw new IllegalArgumentException("invocation == null"); String methodName = arg1.getMethodName();
+String extName = url.getMethodParameter(methodName, "cache", "lru");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.cache.CacheFactory) name from url (" + url.toString() + ") use keys([cache])");
+org.apache.dubbo.cache.CacheFactory extension = (org.apache.dubbo.cache.CacheFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.cache.CacheFactory.class).getExtension(extName);
+return extension.getCache(arg0, arg1);
+}
+}, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,634 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.monitor;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class MonitorFactory$Adaptive implements org.apache.dubbo.monitor.MonitorFactory {
+public org.apache.dubbo.monitor.Monitor getMonitor(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.monitor.MonitorFactory) name from url (" + url.toString() + ") use keys([protocol])");
+org.apache.dubbo.monitor.MonitorFactory extension = (org.apache.dubbo.monitor.MonitorFactory)ExtensionLoader.getExtensionLoader(org.apache.dubbo.monitor.MonitorFactory.class).getExtension(extName);
+return extension.getMonitor(arg0);
+}
+}, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,656 DEBUG
+            [main][AdaptiveClassCodeGenerator.java:104] -  [DUBBO] package org.apache.dubbo.validation;
+import org.apache.dubbo.common.extension.ExtensionLoader;
+public class Validation$Adaptive implements org.apache.dubbo.validation.Validation {
+public org.apache.dubbo.validation.Validator getValidator(org.apache.dubbo.common.URL arg0)  {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+org.apache.dubbo.common.URL url = arg0;
+String extName = url.getParameter("validation", "jvalidation");
+if(extName == null) throw new IllegalStateException("Failed to get extension (org.apache.dubbo.validation.Validation) name from url (" + url.toString() + ") use keys([validation])");
+org.apache.dubbo.validation.Validation extension = (org.apache.dubbo.validation.Validation)ExtensionLoader.getExtensionLoader(org.apache.dubbo.validation.Validation.class).getExtension(extName);
+return extension.getValidator(arg0);
+}
+}, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,695 INFO
+            [main][AbstractRegistry.java:212] -  [DUBBO] Load registry cache file C:\Users\Wenbo\.dubbo\dubbo-registry-huiminpay-merchant-application-127.0.0.1:8848.cache, data: {com.huiminpay.merchant.api.MerchantServiceApi=dubbo://172.16.26.143:20890/com.huiminpay.merchant.api.MerchantServiceApi?anyhost=true&application=huiminpay-merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantServiceApi&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantServiceApi&methods=findMerchantById&path=com.huiminpay.merchant.api.MerchantServiceApi&pid=7800&protocol=dubbo&register=true&release=2.7.3&side=provider&timestamp=1629337874966, huiminpay-merchant-service/com.alibaba.cloud.dubbo.service.DubboMetadataService:1.0.0=dubbo://172.16.26.143:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=huiminpay-merchant-service&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=huiminpay-merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&path=com.alibaba.cloud.dubbo.service.DubboMetadataService&pid=7800&protocol=dubbo&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1629337876267&version=1.0.0}, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,696 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://172.16.26.143/org.apache.dubbo.rpc.service.GenericService?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&generic=true&group=huiminpay-merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386770&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,705 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://172.16.26.143/org.apache.dubbo.rpc.service.GenericService?application=huiminpay-merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=huiminpay-merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386770&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,715 INFO
+            [main][AbstractRegistry.java:399] -  [DUBBO] Notify urls for subscribe url consumer://172.16.26.143/org.apache.dubbo.rpc.service.GenericService?application=huiminpay-merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=huiminpay-merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386770&version=1.0.0, urls: [dubbo://172.16.26.143:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=huiminpay-merchant-service&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=huiminpay-merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&path=com.alibaba.cloud.dubbo.service.DubboMetadataService&pid=7800&protocol=dubbo&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1629337876267&version=1.0.0], dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,721 INFO
+            [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:399] -  [DUBBO] Notify urls for subscribe url consumer://172.16.26.143/org.apache.dubbo.rpc.service.GenericService?application=huiminpay-merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&generic=true&group=huiminpay-merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386770&version=1.0.0, urls: [dubbo://172.16.26.143:20890/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=huiminpay-merchant-service&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=huiminpay-merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&path=com.alibaba.cloud.dubbo.service.DubboMetadataService&pid=7800&protocol=dubbo&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1629337876267&version=1.0.0], dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,726 INFO
+            [main][ReferenceConfig.java:421] -  [DUBBO] Refer dubbo service org.apache.dubbo.rpc.service.GenericService from url registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=huiminpay-merchant-application&check=false&cluster=registryaware&dubbo=2.0.2&generic=true&group=huiminpay-merchant-service&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&lazy=false&pid=15168&qos.enable=false&qos.port=22310&refer=application%3Dhuiminpay-merchant-application%26check%3Dfalse%26dubbo%3D2.0.2%26generic%3Dtrue%26group%3Dhuiminpay-merchant-service%26interface%3Dcom.alibaba.cloud.dubbo.service.DubboMetadataService%26lazy%3Dfalse%26pid%3D15168%26qos.enable%3Dfalse%26qos.port%3D22310%26register.ip%3D172.16.26.143%26release%3D2.7.3%26retries%3D-1%26side%3Dconsumer%26sticky%3Dfalse%26timeout%3D3000%26timestamp%3D1629339386770%26version%3D1.0.0&register.ip=172.16.26.143&registry=nacos&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386770&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,784 DEBUG
+            [main][Recycler.java:96] - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,785 DEBUG
+            [main][Recycler.java:97] - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,785 DEBUG
+            [main][Recycler.java:98] - -Dio.netty.recycler.linkCapacity: 16
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,785 DEBUG
+            [main][Recycler.java:99] - -Dio.netty.recycler.ratio: 8
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,812 DEBUG
+            [NettyClientWorker-1-1][AbstractByteBuf.java:61] - -Dio.netty.buffer.checkAccessible: true
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,813 DEBUG
+            [NettyClientWorker-1-1][AbstractByteBuf.java:62] - -Dio.netty.buffer.checkBounds: true
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,816 DEBUG
+            [NettyClientWorker-1-1][ResourceLeakDetectorFactory.java:202] - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@3e31dd8f
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,901 DEBUG
+            [DubboServerHandler-172.16.26.143:20890-thread-12][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,929 DEBUG
+            [DubboClientHandler-172.16.26.143:20890-thread-1][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcResult, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,931 WARN
+            [main][DubboServiceMetadataRepository.java:484] - The Spring application[name : huiminpay-merchant-service] does not expose The REST metadata in the Dubbo services.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,933 DEBUG
+            [DubboServerHandler-172.16.26.143:20890-thread-13][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,935 DEBUG
+            [DubboClientHandler-172.16.26.143:20890-thread-1][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcResult, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,937 DEBUG
+            [main][AbstractSpringCloudRegistry.java:289] - The subscribed URL[consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438] will notify all URLs : [dubbo://172.16.26.143:20890?anyhost=true&application=huiminpay-merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantServiceApi&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantServiceApi&methods=findMerchantById&pid=7800&register=true&release=2.7.3&side=provider&timestamp=1629337874966]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,939 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,945 ERROR
+            [main][NamingProxy.java:454] - request 127.0.0.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 172.16.26.143:unknown:DEFAULT_1.0_true_false_DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:188)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:205)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:184)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.lambda$doRegister$1(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.execute(NacosRegistry.java:466)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.doRegister(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:236)
+	at org.apache.dubbo.registry.integration.RegistryProtocol.doRefer(RegistryProtocol.java:408)
+	at org.apache.dubbo.registry.integration.RegistryProtocol.refer(RegistryProtocol.java:392)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper.refer(ProtocolFilterWrapper.java:128)
+	at org.apache.dubbo.qos.protocol.QosProtocolWrapper.refer(QosProtocolWrapper.java:70)
+	at org.apache.dubbo.rpc.protocol.ProtocolListenerWrapper.refer(ProtocolListenerWrapper.java:69)
+	at org.apache.dubbo.rpc.Protocol$Adaptive.refer(Protocol$Adaptive.java)
+	at org.apache.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:401)
+	at org.apache.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:329)
+	at org.apache.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:250)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.init(ReferenceAnnotationBeanPostProcessor.java:269)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.access$100(ReferenceAnnotationBeanPostProcessor.java:242)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.buildInvocationHandler(ReferenceAnnotationBeanPostProcessor.java:236)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.buildProxy(ReferenceAnnotationBeanPostProcessor.java:219)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.doGetInjectedBean(ReferenceAnnotationBeanPostProcessor.java:134)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.getInjectedObject(AnnotationInjectedBeanPostProcessor.java:360)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor$AnnotatedFieldElement.inject(AnnotationInjectedBeanPostProcessor.java:540)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.postProcessPropertyValues(AnnotationInjectedBeanPostProcessor.java:147)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.huiminpay.merchant.MerchantApplicationBootstrap.main(MerchantApplicationBootstrap.java:17)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,947 ERROR
+            [main][FailbackRegistry.java:251] -  [DUBBO] Failed to register consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, waiting for retry, cause: failed to req API:/nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 172.16.26.143:unknown:DEFAULT_1.0_true_false_DEFAULT, dubbo version: 2.7.3, current host: 172.16.26.143
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 172.16.26.143:unknown:DEFAULT_1.0_true_false_DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:188)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:205)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:184)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.lambda$doRegister$1(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.execute(NacosRegistry.java:466)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.doRegister(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:236)
+	at org.apache.dubbo.registry.integration.RegistryProtocol.doRefer(RegistryProtocol.java:408)
+	at org.apache.dubbo.registry.integration.RegistryProtocol.refer(RegistryProtocol.java:392)
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper.refer(ProtocolFilterWrapper.java:128)
+	at org.apache.dubbo.qos.protocol.QosProtocolWrapper.refer(QosProtocolWrapper.java:70)
+	at org.apache.dubbo.rpc.protocol.ProtocolListenerWrapper.refer(ProtocolListenerWrapper.java:69)
+	at org.apache.dubbo.rpc.Protocol$Adaptive.refer(Protocol$Adaptive.java)
+	at org.apache.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:401)
+	at org.apache.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:329)
+	at org.apache.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:250)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.init(ReferenceAnnotationBeanPostProcessor.java:269)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceBeanInvocationHandler.access$100(ReferenceAnnotationBeanPostProcessor.java:242)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.buildInvocationHandler(ReferenceAnnotationBeanPostProcessor.java:236)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.buildProxy(ReferenceAnnotationBeanPostProcessor.java:219)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.doGetInjectedBean(ReferenceAnnotationBeanPostProcessor.java:134)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.getInjectedObject(AnnotationInjectedBeanPostProcessor.java:360)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor$AnnotatedFieldElement.inject(AnnotationInjectedBeanPostProcessor.java:540)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.apache.dubbo.config.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.postProcessPropertyValues(AnnotationInjectedBeanPostProcessor.java:147)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.huiminpay.merchant.MerchantApplicationBootstrap.main(MerchantApplicationBootstrap.java:17)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,954 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,960 INFO
+            [main][AbstractRegistry.java:399] -  [DUBBO] Notify urls for subscribe url consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, urls: [dubbo://172.16.26.143:20890/com.huiminpay.merchant.api.MerchantServiceApi?anyhost=true&application=huiminpay-merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantServiceApi&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantServiceApi&methods=findMerchantById&path=com.huiminpay.merchant.api.MerchantServiceApi&pid=7800&protocol=dubbo&register=true&release=2.7.3&side=provider&timestamp=1629337874966], dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,962 INFO
+            [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:399] -  [DUBBO] Notify urls for subscribe url consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, urls: [dubbo://172.16.26.143:20890/com.huiminpay.merchant.api.MerchantServiceApi?anyhost=true&application=huiminpay-merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantServiceApi&category=providers&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantServiceApi&methods=findMerchantById&path=com.huiminpay.merchant.api.MerchantServiceApi&pid=7800&protocol=dubbo&register=true&release=2.7.3&side=provider&timestamp=1629337874966], dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:27,962 INFO
+            [main][ReferenceConfig.java:421] -  [DUBBO] Refer dubbo service com.huiminpay.merchant.api.MerchantServiceApi from url registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=huiminpay-merchant-application&check=false&cluster=registryaware&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&refer=application%3Dhuiminpay-merchant-application%26check%3Dfalse%26dubbo%3D2.0.2%26interface%3Dcom.huiminpay.merchant.api.MerchantServiceApi%26lazy%3Dfalse%26methods%3DfindMerchantById%26pid%3D15168%26qos.enable%3Dfalse%26qos.port%3D22310%26register.ip%3D172.16.26.143%26release%3D2.7.3%26retries%3D-1%26side%3Dconsumer%26sticky%3Dfalse%26timeout%3D3000%26timestamp%3D1629339386438&register.ip=172.16.26.143&registry=nacos&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:28,915 INFO
+            [main][EndpointLinksResolver.java:59] - Exposing 4 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,469 INFO
+            [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,592 WARN
+            [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,592 INFO
+            [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,606 WARN
+            [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,606 INFO
+            [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,691 DEBUG
+            [main][TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,692 DEBUG
+            [main][ResourceBundleMessageInterpolator.java:89] - Loaded expression factory via original TCCL
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,716 DEBUG
+            [main][TraversableResolvers.java:60] - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,718 DEBUG
+            [main][ConfigurationImpl.java:148] - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,720 DEBUG
+            [main][ConfigurationImpl.java:180] - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,721 DEBUG
+            [main][ConfigurationImpl.java:194] - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,723 DEBUG
+            [main][ValidationXmlParser.java:120] - Trying to load META-INF/validation.xml for XML based Validator configuration.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,723 DEBUG
+            [main][ResourceLoaderHelper.java:53] - Trying to load META-INF/validation.xml via user class loader
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,724 DEBUG
+            [main][ResourceLoaderHelper.java:60] - Trying to load META-INF/validation.xml via TCCL
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,725 DEBUG
+            [main][ResourceLoaderHelper.java:66] - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,725 DEBUG
+            [main][ValidationXmlParser.java:127] - No META-INF/validation.xml found. Using annotation based configuration only.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,737 DEBUG
+            [main][ValidatorFactoryImpl.java:578] - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,738 DEBUG
+            [main][ValidatorFactoryImpl.java:579] - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,738 DEBUG
+            [main][ValidatorFactoryImpl.java:580] - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,738 DEBUG
+            [main][ValidatorFactoryImpl.java:581] - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,738 DEBUG
+            [main][ValidatorFactoryImpl.java:582] - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:29,971 INFO
+            [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:30,723 INFO
+            [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:30,785 INFO
+            [main][DubboConfigBindingBeanPostProcessor.java:109] - The properties of bean [name : org.apache.dubbo.config.ProtocolConfig#0] have been binding by prefix of configuration properties : dubbo.protocol
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:31,715 DEBUG
+            [main][DubboServiceMetadataRepository.java:273] - The metadata of Dubbo service[name : huiminpay-merchant-service] has been initialized
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:31,715 INFO
+            [main][DubboServiceMetadataRepository.java:262] - The metadata of Dubbo services has been initialized
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:31,861 INFO
+            [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:31,869 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:31,872 INFO
+            [com.alibaba.nacos.naming.client.listener][DubboServiceDiscoveryAutoConfiguration.java:157] - The event of the service instances[name : huiminpay-merchant-service , size : 1] change is about to be dispatched
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:31,874 INFO
+            [com.alibaba.nacos.naming.client.listener][AbstractSpringCloudRegistry.java:213] - The Dubbo Service URL[ID : consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi] is being subscribed for service[name : huiminpay-merchant-service]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:31,877 DEBUG
+            [DubboServerHandler-172.16.26.143:20890-thread-14][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcInvocation, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:31,879 DEBUG
+            [DubboClientHandler-172.16.26.143:20890-thread-1][DecodeHandler.java:59] -  [DUBBO] Decode decodeable message org.apache.dubbo.rpc.protocol.dubbo.DecodeableRpcResult, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:31,880 DEBUG
+            [com.alibaba.nacos.naming.client.listener][AbstractSpringCloudRegistry.java:289] - The subscribed URL[consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=providers,configurators,routers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438] will notify all URLs : [dubbo://172.16.26.143:20890?anyhost=true&application=huiminpay-merchant-service&bean.name=ServiceBean:com.huiminpay.merchant.api.MerchantServiceApi&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.huiminpay.merchant.api.MerchantServiceApi&methods=findMerchantById&pid=7800&register=true&release=2.7.3&side=provider&timestamp=1629337874966]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:31,895 INFO
+            [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:31,989 INFO
+            [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,308 INFO
+            [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-57010"]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,357 INFO
+            [main][TomcatWebServer.java:204] - Tomcat started on port(s): 57010 (http) with context path '/merchant'
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,405 WARN
+            [main][AbstractInterfaceConfig.java:265] -  [DUBBO] There's no valid metadata config found, if you are using the simplified mode of registry url, please make sure you have a metadata address configured properly., dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,463 INFO
+            [main][ServiceConfig.java:643] -  [DUBBO] Export dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService to local registry url : injvm://127.0.0.1/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=huiminpay-merchant-application&bind.ip=172.16.26.143&bind.port=20891&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=huiminpay-merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=15168&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1629339392411&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,464 INFO
+            [main][ServiceConfig.java:581] -  [DUBBO] Export dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService to url dubbo://172.16.26.143:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=huiminpay-merchant-application&bind.ip=172.16.26.143&bind.port=20891&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=huiminpay-merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=15168&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1629339392411&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,465 INFO
+            [main][AbstractInterfaceConfig.java:237] -  [DUBBO] There's no valid monitor config found, if you want to open monitor statistics for Dubbo, please make sure your monitor is configured properly., dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,466 INFO
+            [main][ServiceConfig.java:595] -  [DUBBO] Register dubbo service com.alibaba.cloud.dubbo.service.DubboMetadataService url dubbo://172.16.26.143:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=huiminpay-merchant-application&bind.ip=172.16.26.143&bind.port=20891&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=huiminpay-merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=15168&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1629339392411&version=1.0.0 to registry registry://127.0.0.1:8848/org.apache.dubbo.registry.RegistryService?application=huiminpay-merchant-application&dubbo=2.0.2&pid=15168&qos.enable=false&qos.port=22310&registry=nacos&release=2.7.3&timestamp=1629339392406, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,527 INFO
+            [main][AbstractServer.java:73] -  [DUBBO] Start NettyServer bind /0.0.0.0:20891, export /172.16.26.143:20891, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,531 INFO
+            [main][AbstractRegistry.java:280] -  [DUBBO] Register: dubbo://172.16.26.143:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=huiminpay-merchant-application&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=huiminpay-merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=15168&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1629339392411&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,536 INFO
+            [main][AbstractRegistry.java:305] -  [DUBBO] Subscribe: provider://172.16.26.143:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=huiminpay-merchant-application&bind.ip=172.16.26.143&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=huiminpay-merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=15168&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1629339392411&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,545 WARN
+            [main][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://172.16.26.143:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=huiminpay-merchant-application&bind.ip=172.16.26.143&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=huiminpay-merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=15168&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1629339392411&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,743 WARN
+            [com.alibaba.nacos.naming.client.listener][AbstractRegistry.java:395] -  [DUBBO] Ignore empty notify urls for subscribe url provider://172.16.26.143:20891/com.alibaba.cloud.dubbo.service.DubboMetadataService?anyhost=true&application=huiminpay-merchant-application&bind.ip=172.16.26.143&bind.port=20891&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&group=huiminpay-merchant-application&interface=com.alibaba.cloud.dubbo.service.DubboMetadataService&methods=getAllServiceKeys,getServiceRestMetadata,getExportedURLs,getAllExportedURLs&pid=15168&qos.enable=false&qos.port=22310&register=true&release=2.7.3&revision=2.1.0.RELEASE&side=provider&timestamp=1629339392411&version=1.0.0, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,748 INFO
+            [main][DubboMetadataServiceExporter.java:86] - The Dubbo service[<dubbo:service path="com.alibaba.cloud.dubbo.service.DubboMetadataService" ref="com.alibaba.cloud.dubbo.service.IntrospectiveDubboMetadataService@1cc42abe" prefix="dubbo.service.com.alibaba.cloud.dubbo.service.DubboMetadataService" generic="false" interface="com.alibaba.cloud.dubbo.service.DubboMetadataService" unexported="false" exported="true" version="1.0.0" dynamic="true" group="huiminpay-merchant-application" register="true" deprecated="false" id="com.alibaba.cloud.dubbo.service.DubboMetadataService" valid="true" />] has been exported.
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,775 INFO
+            [main][NacosServiceRegistry.java:62] - nacos registry, huiminpay-merchant-application 172.16.26.143:57010 register finished
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:32,781 INFO
+            [main][StartupInfoLogger.java:59] - Started MerchantApplicationBootstrap in 18.309 seconds (JVM running for 20.584)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:33,060 INFO
+            [RMI TCP Connection(5)-172.16.26.143][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:33,061 INFO
+            [RMI TCP Connection(5)-172.16.26.143][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:33,290 INFO
+            [RMI TCP Connection(5)-172.16.26.143][FrameworkServlet.java:546] - Completed initialization in 229 ms
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:33,553 WARN
+            [com.alibaba.nacos.naming.push.receiver][HostReactor.java:110] - out of date data received, old-t: 1629339393548, new-t: 1629339393546
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:33,782 INFO
+            [com.alibaba.nacos.naming.client.listener][DubboServiceDiscoveryAutoConfiguration.java:157] - The event of the service instances[name : huiminpay-merchant-application , size : 1] change is about to be dispatched
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:33,782 INFO
+            [com.alibaba.nacos.naming.client.listener][AbstractSpringCloudRegistry.java:213] - The Dubbo Service URL[ID : provider://172.16.26.143:20890/com.huiminpay.merchant.api.MerchantServiceApi] is being subscribed for service[name : huiminpay-merchant-application]
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:33,782 INFO
+            [com.alibaba.nacos.naming.client.listener][AbstractSpringCloudRegistry.java:223] - The metadata of Dubbo service[key : com.huiminpay.merchant.api.MerchantServiceApi] can't be found when the subscribed service[name : huiminpay-merchant-application], and then try to initialize it
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:33,782 DEBUG
+            [com.alibaba.nacos.naming.client.listener][DubboServiceMetadataRepository.java:273] - The metadata of Dubbo service[name : huiminpay-merchant-application] has been initialized
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:33,782 WARN
+            [com.alibaba.nacos.naming.client.listener][AbstractSpringCloudRegistry.java:234] - The metadata of Dubbo service[key : com.huiminpay.merchant.api.MerchantServiceApi] still can't be found, it could effect the further Dubbo service invocation
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:37,954 INFO
+            [DubboRegistryRetryTimer-thread-1][AbstractRetryTask.java:121] -  [DUBBO] retry register : consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:37,960 ERROR
+            [DubboRegistryRetryTimer-thread-1][NamingProxy.java:454] - request 127.0.0.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 172.16.26.143:unknown:DEFAULT_1.0_true_false_DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:188)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:205)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:184)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.lambda$doRegister$1(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.execute(NacosRegistry.java:466)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.doRegister(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.retry.FailedRegisteredTask.doRetry(FailedRegisteredTask.java:37)
+	at org.apache.dubbo.registry.retry.AbstractRetryTask.run(AbstractRetryTask.java:124)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:648)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:727)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$Worker.run(HashedWheelTimer.java:449)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:37,961 WARN
+            [DubboRegistryRetryTimer-thread-1][AbstractRetryTask.java:126] -  [DUBBO] Failed to execute task retry register, url: consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, waiting for again, cause:failed to req API:/nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 172.16.26.143:unknown:DEFAULT_1.0_true_false_DEFAULT, dubbo version: 2.7.3, current host: 172.16.26.143
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 172.16.26.143:unknown:DEFAULT_1.0_true_false_DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:188)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:205)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:184)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.lambda$doRegister$1(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.execute(NacosRegistry.java:466)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.doRegister(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.retry.FailedRegisteredTask.doRetry(FailedRegisteredTask.java:37)
+	at org.apache.dubbo.registry.retry.AbstractRetryTask.run(AbstractRetryTask.java:124)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:648)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:727)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$Worker.run(HashedWheelTimer.java:449)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:45,330 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:47,954 INFO
+            [DubboRegistryRetryTimer-thread-1][AbstractRetryTask.java:121] -  [DUBBO] retry register : consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:47,959 ERROR
+            [DubboRegistryRetryTimer-thread-1][NamingProxy.java:454] - request 127.0.0.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 172.16.26.143:unknown:DEFAULT_1.0_true_false_DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:188)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:205)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:184)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.lambda$doRegister$1(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.execute(NacosRegistry.java:466)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.doRegister(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.retry.FailedRegisteredTask.doRetry(FailedRegisteredTask.java:37)
+	at org.apache.dubbo.registry.retry.AbstractRetryTask.run(AbstractRetryTask.java:124)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:648)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:727)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$Worker.run(HashedWheelTimer.java:449)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:47,960 WARN
+            [DubboRegistryRetryTimer-thread-1][AbstractRetryTask.java:126] -  [DUBBO] Failed to execute task retry register, url: consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, waiting for again, cause:failed to req API:/nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 172.16.26.143:unknown:DEFAULT_1.0_true_false_DEFAULT, dubbo version: 2.7.3, current host: 172.16.26.143
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 172.16.26.143:unknown:DEFAULT_1.0_true_false_DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:188)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:205)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:184)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.lambda$doRegister$1(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.execute(NacosRegistry.java:466)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.doRegister(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.retry.FailedRegisteredTask.doRetry(FailedRegisteredTask.java:37)
+	at org.apache.dubbo.registry.retry.AbstractRetryTask.run(AbstractRetryTask.java:124)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:648)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:727)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$Worker.run(HashedWheelTimer.java:449)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:57,954 INFO
+            [DubboRegistryRetryTimer-thread-1][AbstractRetryTask.java:121] -  [DUBBO] retry register : consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:57,960 ERROR
+            [DubboRegistryRetryTimer-thread-1][NamingProxy.java:454] - request 127.0.0.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 172.16.26.143:unknown:DEFAULT_1.0_true_false_DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:188)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:205)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:184)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.lambda$doRegister$1(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.execute(NacosRegistry.java:466)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.doRegister(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.retry.FailedRegisteredTask.doRetry(FailedRegisteredTask.java:37)
+	at org.apache.dubbo.registry.retry.AbstractRetryTask.run(AbstractRetryTask.java:124)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:648)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:727)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$Worker.run(HashedWheelTimer.java:449)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:16:57,961 WARN
+            [DubboRegistryRetryTimer-thread-1][AbstractRetryTask.java:126] -  [DUBBO] Failed to execute task retry register, url: consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, waiting for again, cause:failed to req API:/nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 172.16.26.143:unknown:DEFAULT_1.0_true_false_DEFAULT, dubbo version: 2.7.3, current host: 172.16.26.143
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance. code:500 msg: ErrCode:400,ErrMsg:instance already exist: 172.16.26.143:unknown:DEFAULT_1.0_true_false_DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:188)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:205)
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:184)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.lambda$doRegister$1(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.execute(NacosRegistry.java:466)
+	at org.apache.dubbo.registry.nacos.NacosRegistry.doRegister(NacosRegistry.java:153)
+	at org.apache.dubbo.registry.retry.FailedRegisteredTask.doRetry(FailedRegisteredTask.java:37)
+	at org.apache.dubbo.registry.retry.AbstractRetryTask.run(AbstractRetryTask.java:124)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:648)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:727)
+	at org.apache.dubbo.common.timer.HashedWheelTimer$Worker.run(HashedWheelTimer.java:449)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:17:01,886 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:17:07,968 WARN
+            [DubboRegistryRetryTimer-thread-1][AbstractRetryTask.java:117] -  [DUBBO] Final failed to execute task retry register, url: consumer://172.16.26.143/com.huiminpay.merchant.api.MerchantServiceApi?application=huiminpay-merchant-application&category=consumers&check=false&dubbo=2.0.2&interface=com.huiminpay.merchant.api.MerchantServiceApi&lazy=false&methods=findMerchantById&pid=15168&qos.enable=false&qos.port=22310&release=2.7.3&retries=-1&side=consumer&sticky=false&timeout=3000&timestamp=1629339386438, retry 3 times., dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:17:15,339 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:17:31,896 DEBUG
+            [NettyClientWorker-1-1][NettyClientHandler.java:121] -  [DUBBO] IdleStateEvent triggered, send heartbeat to channel NettyChannel [channel=[id: 0xe85463e0, L:/172.16.26.143:51629 - R:/172.16.26.143:20890]], dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:17:31,897 DEBUG
+            [NettyServerWorker-3-3][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /172.16.26.143:51629, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 172.16.26.143
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:17:31,897 WARN
+            [ThreadPoolTaskScheduler-1][DubboServiceMetadataRepository.java:216] - Current application will subscribe all services(size:2) in registry, a lot of memory and CPU cycles may be used, thus it's strongly recommend you using the externalized property 'dubbo.cloud.subscribed-services' to specify the services
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 10:17:31,898 DEBUG
+            [NettyClientWorker-1-1][HeartbeatHandler.java:84] -  [DUBBO] Receive heartbeat response in thread NettyClientWorker-1-1, dubbo version: 2.7.3, current host: 172.16.26.143

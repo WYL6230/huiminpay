@@ -1,0 +1,19 @@
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 14:10:47,304 INFO [Thread-19][ExecutorConfigurationSupport.java:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 14:10:47,311 INFO
+            [Thread-44][DruidDataSource.java:1885] - {dataSource-1} closing ...
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 14:10:47,317 DEBUG
+            [Thread-44][Log4j2Filter.java:132] - {conn-10001} closed
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 14:10:47,319 DEBUG
+            [Thread-44][Log4j2Filter.java:132] - {conn-10002} closed
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 14:10:47,321 DEBUG
+            [Thread-44][Log4j2Filter.java:132] - {conn-10003} closed
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 14:10:47,323 DEBUG
+            [Thread-44][Log4j2Filter.java:132] - {conn-10004} closed
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 14:10:47,324 DEBUG
+            [Thread-44][Log4j2Filter.java:132] - {conn-10005} closed
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 14:10:47,325 INFO
+            [Thread-44][DruidDataSource.java:1955] - {dataSource-1} closed
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 14:10:47,330 INFO
+            [Thread-44][DubboGenericServiceFactory.java:159] - The Dubbo GenericService ReferenceBeans are destroying...
+[${project.name}][${env:SERVER_PORT}] 2021-08-19 14:10:47,331 INFO
+            [Thread-44][AnnotationInjectedBeanPostProcessor.java:305] - class org.apache.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor was destroying!

@@ -1,0 +1,75 @@
+[${project.name}][${env:SERVER_PORT}] 2021-08-27 19:23:09,106 ERROR [main][NacosPropertySourceBuilder.java:109] - parse data from Nacos error,dataId:gateway-service.yaml,data:#路由规则
+zuul:
+	retryable: true
+	add-host-header: true
+	ignoredServices: "*"
+	sensitiveHeaders: "*"
+	routes:
+		operation-application:
+			path: /operation/**
+			stripPrefix: false
+		merchant-application:
+			path: /merchant/**
+			stripPrefix: false
+		uaa-service:
+			path: /uaa/**
+			stripPrefix: false
+feign:
+	hystrix:
+		enabled: true
+	compression:
+		request:
+			enabled:true
+			mime-types: ["text/xml","application/xml","application/json"]
+			min-request-size: 2048 #配置压缩数据大小的下限
+		response:
+			enabled: true #配置相应GZIP压缩
+hystrix:
+	command:
+		default:
+			execution:
+				isolation:
+					thread:
+						timeoutInMilliseconds: 90000 #设置熔断超时时间 默认1000
+					timeout:
+						enabled:	true #打开超时熔断功能
+ribbon:
+	nacos:
+		enabled: true #不知道是否生效
+	ConnectTimeout: 3000 #设置超时时间
+	ReadTimeout: 20000 #设置读取超时时间,
+while scanning for the next token
+found character '\t(TAB)' that cannot start any token. (Do not use \t(TAB) for indentation)
+ in 'reader', line 3, column 1:
+    	retryable: true
+    ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:419)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:586)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:124)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:236)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:215)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:123)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:547)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:161)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:134)
+	at org.springframework.beans.factory.config.YamlPropertiesFactoryBean.createProperties(YamlPropertiesFactoryBean.java:135)
+	at org.springframework.beans.factory.config.YamlPropertiesFactoryBean.getObject(YamlPropertiesFactoryBean.java:115)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:100)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:75)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:179)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:155)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:88)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:649)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:373)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.huiminpay.gateway.GatewayBootstrap.main(GatewayBootstrap.java:22)

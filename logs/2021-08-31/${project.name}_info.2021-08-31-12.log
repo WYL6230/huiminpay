@@ -1,0 +1,136 @@
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 13:00:14,856 DEBUG
+            [NettyServerWorker-4-1][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.2.114:51791, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.2.114
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 13:00:14,876 DEBUG
+            [NettyServerWorker-4-2][HeartbeatHandler.java:74] -  [DUBBO] Received heartbeat from remote channel /192.168.2.114:55557, cause: The channel has no data-transmission exceeds a heartbeat period: 60000ms, dubbo version: 2.7.3, current host: 192.168.2.114
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 13:00:15,046 ERROR
+            [com.alibaba.nacos.client.naming.updater][NamingProxy.java:454] - request 127.0.0.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:127.0.0.1:8848/nacos/v1/ns/instance/list. code:404 msg: service not found: DEFAULT_GROUP@@providers:com.huiminpay.transaction.api.service.AppPlatformChannelServiceApi::
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 13:00:15,046 ERROR
+            [com.alibaba.nacos.client.naming.updater][NamingProxy.java:454] - request 127.0.0.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:127.0.0.1:8848/nacos/v1/ns/instance/list. code:404 msg: service not found: DEFAULT_GROUP@@providers:com.huiminpay.transaction.api.service.PlatformChannelServiceApi::
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 13:00:15,047 ERROR
+            [com.alibaba.nacos.client.naming.updater][NamingProxy.java:454] - request 127.0.0.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:127.0.0.1:8848/nacos/v1/ns/instance/list. code:404 msg: service not found: DEFAULT_GROUP@@providers:com.huiminpay.transaction.api.service.PayChannelServiceApi::
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 13:00:15,047 ERROR
+            [com.alibaba.nacos.client.naming.updater][NamingProxy.java:454] - request 127.0.0.1:8848 failed.
+ErrCode:500, ErrMsg:failed to req API:127.0.0.1:8848/nacos/v1/ns/instance/list. code:404 msg: service not found: DEFAULT_GROUP@@providers:com.huiminpay.transaction.api.service.PayChannelParamServiceApi::
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:424)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:451)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 13:00:15,047 ERROR
+            [com.alibaba.nacos.client.naming.updater][HostReactor.java:275] - [NA] failed to update serviceName: DEFAULT_GROUP@@providers:com.huiminpay.transaction.api.service.AppPlatformChannelServiceApi::
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/list after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance/list. code:404 msg: service not found: DEFAULT_GROUP@@providers:com.huiminpay.transaction.api.service.AppPlatformChannelServiceApi::
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 13:00:15,047 ERROR
+            [com.alibaba.nacos.client.naming.updater][HostReactor.java:275] - [NA] failed to update serviceName: DEFAULT_GROUP@@providers:com.huiminpay.transaction.api.service.PayChannelServiceApi::
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/list after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance/list. code:404 msg: service not found: DEFAULT_GROUP@@providers:com.huiminpay.transaction.api.service.PayChannelServiceApi::
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 13:00:15,047 ERROR
+            [com.alibaba.nacos.client.naming.updater][HostReactor.java:275] - [NA] failed to update serviceName: DEFAULT_GROUP@@providers:com.huiminpay.transaction.api.service.PlatformChannelServiceApi::
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/list after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance/list. code:404 msg: service not found: DEFAULT_GROUP@@providers:com.huiminpay.transaction.api.service.PlatformChannelServiceApi::
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2021-08-31 13:00:15,048 ERROR
+            [com.alibaba.nacos.client.naming.updater][HostReactor.java:275] - [NA] failed to update serviceName: DEFAULT_GROUP@@providers:com.huiminpay.transaction.api.service.PayChannelParamServiceApi::
+java.lang.IllegalStateException: failed to req API:/nacos/v1/ns/instance/list after all servers([127.0.0.1:8848]) tried: failed to req API:127.0.0.1:8848/nacos/v1/ns/instance/list. code:404 msg: service not found: DEFAULT_GROUP@@providers:com.huiminpay.transaction.api.service.PayChannelParamServiceApi::
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:464)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:386)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:297)
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateServiceNow(HostReactor.java:270)
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:315)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
